@@ -624,14 +624,6 @@ img {
   margin-right: 8px;
 }
 
-.site-nav {
-  display: none;
-}
-
-.phone-mail {
-  display: none;
-}
-
 .footer {
   background-color: var(--primary-bcg-color);
   padding: 60px 0;
