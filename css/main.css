@@ -572,6 +572,18 @@ img {
   align-items: center;
 }
 
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
 .footer {
   background-color: var(--primary-bcg-color);
   padding: 60px 0;
