@@ -16,20 +16,20 @@ img {
 
 }
 
-// .list {
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-// }
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
-// .link {
-//     text-decoration: none;
+.link {
+    text-decoration: none;
 
-//     .site-nav &:hover, 
-//     .site-nav &:focus {
-//     color: var(--accent-color)
-// }
-// }
+    .site-nav &:hover, 
+    .site-nav &:focus {
+    color: var(--accent-color)
+}
+}
 
 .section {
     padding-top: 94px;
