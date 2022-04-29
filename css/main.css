@@ -930,6 +930,7 @@ img {
   color: var(--secondary-text-color);
   display: block;
   align-items: center;
+  justify-content: center;
 }
 
 .thumb {
@@ -982,6 +983,15 @@ img {
 
 .img-apps {
   position: relative;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  justify-content: center;
+  text-align: center;
 }
 
 .list-image {

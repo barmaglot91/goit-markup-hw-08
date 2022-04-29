@@ -3,6 +3,7 @@
     color: var(--secondary-text-color);
     display: block;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -74,8 +75,15 @@
 
 }
 
+.title {
 
+    text-align: center;
+}
 
+.text {
+    justify-content: center;
+    text-align: center;
+}
 
 .list-image {
     display: flex;
