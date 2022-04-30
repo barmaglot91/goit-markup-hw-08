@@ -19,20 +19,24 @@
 .teammates {
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .team {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .team-img {
     margin-right: 30px;
+    
 
 }
 
 .list-command {
+
     width: 270px;
     background-color: var(--primary-white-color);
     margin-right: 30px;
