@@ -212,6 +212,30 @@ img {
   background-color: #C4C4C4;
 }
 
+@media screen and (max-width: 479px) {
+  .hero {
+    text-align: center;
+    background-color: var(--primary-bcg-color);
+    padding: 118px 0;
+    margin-bottom: 60px;
+    max-width: 468px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/Header-img-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #C4C4C4;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/mobile/Header-img-mobile@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 480px) {
   .hero {
     text-align: center;
@@ -222,11 +246,17 @@ img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/image hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/Header-img-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/mobile/Header-img-mobile@2x.jpg");
   }
 }
 
@@ -239,11 +269,17 @@ img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/image hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet/Header-img-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/tablet/Header-img-tablet@2x.jpg");
   }
 }
 
@@ -256,11 +292,17 @@ img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/image hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/deckstop/Img-deckstop-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/deckstop/Img-deckstop-hero@2x.jpg");
   }
 }
 
