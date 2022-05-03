@@ -14,17 +14,22 @@
 <body class="page">
     <!--Шапка сайта-->
     <header class="header">
-        <div class="container main-nav">
+        <div class="container main__nav">
         <a href="/" class="header__logo_theme_light link">
         <p lang="en"> <span class="logo-img">Web</span>Studio</p> 
         </a>
         <nav class="navigation">
         <ul class="site-nav list">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link current" >Портфолио</a></li>  
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link link current">Студия</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link" >Портфолио</a></li>  
             <li class="site-nav__item"><a href="" class="site-nav__link link" >Контакты</a></li>
         </ul>
         </nav>
+        <button type="button" class="mobile-menu-btn" width="40" height="40" data-menu-open>
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <use href="./images/sprite.svg#burger-menu-icon"></use>
+            </svg>
+        </button>
         <ul class="phone-mail list">
             <li class="phone-mail__item" >
                 <a class="header__mail-number link" href="mail:info@devstudio.com">
@@ -34,8 +39,8 @@
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li class="phone-mail__item">
-                <a class="header__mail-number link" href="tel:380961111111">
+            <li class="phone-mail__item mail-item">
+                <a class="mail-item header__mail-number link" href="tel:380961111111">
                         <svg class="icon-mail" width="10" height="16">
                             <use href="./images/sprite.svg#icon-smartphone">
                             </use>
@@ -43,6 +48,41 @@
             </li>
         </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-close-menu-mobile">
+
+                    </use>
+                </svg>
+            </button>
+            <ul class="mobile-nav list">
+                <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-icon current link">Студия</a></li>
+                <li class="mobile-nav-item"><a href="./portfolio.html" class="mobile-nav-icon link" >Портфолио</a></li>  
+                <li class="mobile-nav-item"><a href="" class="mobile-nav-icon link" >Контакты</a></li>
+            </ul>
+
+            <ul class="mobile-contact-list list">
+                <li class="mobile-tel">
+                    <a class="mobile-tel-item link" href="tel:380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-mail" >
+                    <a class="mobile-mail-item link" href="mail:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            
+            <ul class="social-list-mobile list">
+                <li class="mobile-social"><a href="" class="mobile-social-item link" >Instagram</a></li>
+                <li class="mobile-social"><a href="" class="mobile-social-item link" >Twitter</a></li>  
+                <li class="mobile-social"><a href="" class="mobile-social-item link" >Facebook</a></li>
+                <li class="mobile-social"><a href="" class="mobile-social-item link" >Linkedin</a></li>
+            </ul>
+            
+        </div>
+    </div>
     </header>
     <main>
         <!-- Фильтр -->
@@ -71,7 +111,15 @@
                 <li class="gallery">
                     <a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image.jpg" alt="фото технокряк" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img1.webp 1x, ./images-portfolio/dackstop/img1@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img1-opt.jpg 1x, ./images-portfolio/dackstop/img1@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img1.webp 1x, ./images-portfolio/tablet/img1@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img1-opt.jpg 1x, ./images-portfolio/tablet/img1@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img1.webp 1x, ./images-portfolio/mobile/img1@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img1-opt.jpg 1x, ./images-portfolio/mobile/img1@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img1-opt.jpg 1x, ./images-portfolio/mobile/img1@2x.jpg 2x" src="./images-portfolio/image.jpg" alt="фото технокряк" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -84,7 +132,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image1.jpg" alt="постер нба" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img2.webp 1x, ./images-portfolio/dackstop/img2@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img2-opt.jpg 1x, ./images-portfolio/dackstop/img2@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img2.webp 1x, ./images-portfolio/tablet/img2@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img2-opt.jpg 1x, ./images-portfolio/tablet/img2@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img2.webp 1x, ./images-portfolio/mobile/img2@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img2-opt.jpg 1x, ./images-portfolio/mobile/img2@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img2-opt.jpg 1x, ./images-portfolio/mobile/img2@2x.jpg 2x" src="./images-portfolio/image1.jpg" alt="постер нба" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -97,7 +153,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image2.jpg" alt="ресторан рыбный" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img3.webp 1x, ./images-portfolio/dackstop/img3@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img3-opt.jpg 1x, ./images-portfolio/dackstop/img3@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img3.webp 1x, ./images-portfolio/tablet/img3@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img3-opt.jpg 1x, ./images-portfolio/tablet/img3@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img3.webp 1x, ./images-portfolio/mobile/img3@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img3-opt.jpg 1x, ./images-portfolio/mobile/img3@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img3-opt.jpg 1x, ./images-portfolio/mobile/img3@2x.jpg 2x" src="./images-portfolio/image2.jpg" alt="ресторан рыбный" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -110,7 +174,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image3.jpg" alt="фото наушники" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img4.webp 1x, ./images-portfolio/dackstop/img4@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img4-opt.jpg 1x, ./images-portfolio/dackstop/img4@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img4.webp 1x, ./images-portfolio/tablet/img4@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img4-opt.jpg 1x, ./images-portfolio/tablet/img4@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img4.webp 1x, ./images-portfolio/mobile/img4@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img4-opt.jpg 1x, ./images-portfolio/mobile/img4@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img4-opt.jpg 1x, ./images-portfolio/mobile/img4@2x.jpg 2x" src="./images-portfolio/image3.jpg" alt="фото наушники" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -123,7 +195,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image4.jpg" alt="коробки" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img5.webp 1x, ./images-portfolio/dackstop/img5@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img5-opt.jpg 1x, ./images-portfolio/dackstop/img5@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img5.webp 1x, ./images-portfolio/tablet/img5@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img5-opt.jpg 1x, ./images-portfolio/tablet/img5@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img5.webp 1x, ./images-portfolio/mobile/img5@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img5-opt.jpg 1x, ./images-portfolio/mobile/img5@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img5-opt.jpg 1x, ./images-portfolio/mobile/img5@2x.jpg 2x" src="./images-portfolio/image4.jpg" alt="коробки" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -136,7 +216,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image5.jpg" alt="компютер" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img6.webp 1x, ./images-portfolio/dackstop/img6@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img6-opt.jpg 1x, ./images-portfolio/dackstop/img6@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img6.webp 1x, ./images-portfolio/tablet/img6@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img6-opt.jpg 1x, ./images-portfolio/tablet/img6@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img6.webp 1x, ./images-portfolio/mobile/img6@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img6-opt.jpg 1x, ./images-portfolio/mobile/img6@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img6-opt.jpg 1x, ./images-portfolio/mobile/img6@2x.jpg 2x" src="./images-portfolio/image5.jpg" alt="компютер" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -149,7 +237,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image6.jpg" alt="издание" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img7.webp 1x, ./images-portfolio/dackstop/img7@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img7-opt.jpg 1x, ./images-portfolio/dackstop/img7@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img7.webp 1x, ./images-portfolio/tablet/img7@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img7-opt.jpg 1x, ./images-portfolio/tablet/img7@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img7.webp 1x, ./images-portfolio/mobile/img7@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img7-opt.jpg 1x, ./images-portfolio/mobile/img7@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img7-opt.jpg 1x, ./images-portfolio/mobile/img7@2x.jpg 2x" src="./images-portfolio/image6.jpg" alt="издание" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -162,7 +258,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image7.jpg" alt="проект лаб" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img8.webp 1x, ./images-portfolio/dackstop/img8@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img8-opt.jpg 1x, ./images-portfolio/dackstop/img8@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img8.webp 1x, ./images-portfolio/tablet/img8@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img8-opt.jpg 1x, ./images-portfolio/tablet/img8@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img8.webp 1x, ./images-portfolio/mobile/img8@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img8-opt.jpg 1x, ./images-portfolio/mobile/img8@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img8-opt.jpg 1x, ./images-portfolio/mobile/img8@2x.jpg 2x" src="./images-portfolio/image7.jpg" alt="проект лаб" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
@@ -175,7 +279,15 @@
                 </li>
                 <li class="gallery"><a class="links flex-elements" href="">
                     <div class="links-img">
-                    <img src="./images-portfolio/image8.jpg" alt="фото ноутбука" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img9.webp 1x, ./images-portfolio/dackstop/img9@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images-portfolio/dackstop/img9-opt.jpg 1x, ./images-portfolio/dackstop/img9@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img9.webp 1x, ./images-portfolio/tablet/img9@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images-portfolio/tablet/img9-opt.jpg 1x, ./images-portfolio/tablet/img9@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img9.webp 1x, ./images-portfolio/mobile/img9@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 320px)" srcset="./images-portfolio/mobile/img9-opt.jpg 1x, ./images-portfolio/mobile/img9@2x.jpg 2x">
+                            <img srcset="./images-portfolio/mobile/img9-opt.jpg 1x, ./images-portfolio/mobile/img9@2x.jpg 2x" src="./images-portfolio/image8.jpg" alt="фото ноутбука" width="370" height="294">
+                        </picture>
                     <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.                    
                     </p>
