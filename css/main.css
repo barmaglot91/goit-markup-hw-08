@@ -315,7 +315,8 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding-top: 60px;
 }
 
 .team-title {
@@ -326,7 +327,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .backdrop {
@@ -1539,6 +1540,8 @@ img {
 
 .our-team {
   background-color: var(--secondary-bcg-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .teammate {
@@ -1571,6 +1574,10 @@ img {
   background-color: var(--primary-white-color);
   margin-right: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.list-command:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .position {
@@ -1614,6 +1621,7 @@ img {
 
 .icons-item:not(:last-child) {
   margin-right: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 479px) {
@@ -1631,6 +1639,16 @@ img {
     background-color: var(--primary-white-color);
     margin-right: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .actions {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  .icons-item {
+    margin-right: 30px;
+    padding-bottom: 30px;
   }
 }
 
