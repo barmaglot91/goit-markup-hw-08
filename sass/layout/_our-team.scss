@@ -176,6 +176,7 @@
     justify-content: center;
 }
 .icons-item {
+ 
     margin-right: 30px;
     padding-bottom: 30px;
     }
@@ -184,6 +185,15 @@
 
 // 768px+
 @media screen and (min-width: 768px) {
+    .actions {
+        flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+    
+
+
     .list-command {
 
         width: 354px;
@@ -199,8 +209,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 768px;
     }
 
+    .icons-item {
+        margin-right: 30px;
+        padding-bottom: 30px;
+        }
 }
 
 // 1200px+
@@ -216,9 +231,21 @@
     }
 
     .team {
-        
+        width: 1200px;
+        flex-wrap: nowrap;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .actions {
+        flex-wrap: nowrap;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.icons {
+    width: 170px;
+}
 }
