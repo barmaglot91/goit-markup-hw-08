@@ -1,5 +1,11 @@
 // 0-1199px
 @media screen and (max-width: 1199px) {
+    .contact-form-input-email {
+        width: 450px;
+        height: 50px;
+    }
+
+    
 
 
 }
@@ -197,7 +203,7 @@ color: #FFFFFF;
 }
 
 .contact-form-input-email {
-    width: 358px;
+
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
@@ -220,12 +226,25 @@ color: #FFFFFF;
 }
 }
 
+
+
 // 768px+
 @media screen and (min-width: 768px) {
     .footer {
         background-color: var(--primary-bcg-color);
         padding: 60px 0;
     
+    
+    }
+
+    .email-form {
+        display: grid;
+        margin-left: 166px;
+    }
+
+    .logo-adress-div {
+        flex-direction:column;
+        margin-left: 76px;
     
     }
     
@@ -267,7 +286,9 @@ color: #FFFFFF;
     
     .logo-adress-div {
         flex-direction:column;
-        margin-right: 70px;
+        margin-bottom: 60px;
+    
+
     
     }
     
@@ -275,14 +296,18 @@ color: #FFFFFF;
     .come-links {
         display: flex;
         flex-direction:column;
-        margin-right: 93px;
+        margin-left: 165px;
     
     }
     
     .come-in {
         margin-bottom: 20px;
+        text-align: center;
     }
     
+    .logo-footer {
+        text-align: center;
+    }
     
     
     .social-list-item-footer {
@@ -322,6 +347,7 @@ color: #FFFFFF;
     
     
     .contacts-footer {
+        text-align: center;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
@@ -355,6 +381,8 @@ color: #FFFFFF;
     
     
     .button-footer {
+        margin-left: 125px;
+        width: 200px;
         display: inline-flex;
     
         color: var(--primary-white-color);
@@ -389,7 +417,12 @@ color: #FFFFFF;
         }
     }
     
+    .foot-container {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: baseline;
     
+    }
     
     .img-send {
         margin-left: 10px;
@@ -397,6 +430,8 @@ color: #FFFFFF;
     
     
     .contact-form-input-email {
+        margin-bottom: 20px;
+        width: 450px;
         background-color: var(--primary-bcg-color);
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
@@ -406,8 +441,7 @@ color: #FFFFFF;
     }
     
     .contact-form-input-email {
-        width: 358px;
-        height: 50px;
+
         padding-left: 16px;
         margin-right: 12px;
         color: var(--primary-white-color);
@@ -432,11 +466,16 @@ color: #FFFFFF;
 
 // 1200px+
 @media screen and (min-width: 1200px) {
-    .footer {
+.footer {
     background-color: var(--primary-bcg-color);
     padding: 60px 0;
 
 
+}
+
+.email-form {
+    display: block;
+    margin: 0;
 }
 
 .footer__logo_theme_dark {
@@ -478,6 +517,7 @@ color: #FFFFFF;
 .logo-adress-div {
     flex-direction:column;
     margin-right: 70px;
+    margin: 0;
 
 }
 
@@ -486,17 +526,26 @@ color: #FFFFFF;
     display: flex;
     flex-direction:column;
     margin-right: 93px;
+    margin-left: 70px;
 
 }
 
 .come-in {
     margin-bottom: 20px;
+    text-align: start;
 }
 
-
+.subscribe {
+    text-align: start;
+}
 
 .social-list-item-footer {
     margin-right: 10px;
+}
+
+
+.adresses {
+    display: table-caption;
 }
 
 .social-list-link-footer {
@@ -565,6 +614,7 @@ color: #FFFFFF;
 
 
 .button-footer {
+    margin: 0;
     display: inline-flex;
 
     color: var(--primary-white-color);
@@ -616,6 +666,7 @@ color: #FFFFFF;
 }
 
 .contact-form-input-email {
+
     width: 358px;
     height: 50px;
     padding-left: 16px;
