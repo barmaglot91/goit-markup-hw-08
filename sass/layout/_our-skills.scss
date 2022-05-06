@@ -2,8 +2,7 @@
 
     color: var(--secondary-text-color);
     display: block;
-    align-items: center;
-    justify-content: center;
+
     
 }
 
@@ -107,6 +106,9 @@ margin-right: 30px;
 
 // 768px+
 @media screen and (min-width: 480px) {
+    .title-text:not(:last-child) {
+        margin-bottom: 30px;
+}
 
 
 }
@@ -129,8 +131,6 @@ margin-right: 30px;
 
         color: var(--secondary-text-color);
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -138,7 +138,7 @@ margin-right: 30px;
         margin: 15px;
 
         width: 354px;
-        height: 251px;}
+}
 
 }
 
@@ -150,8 +150,6 @@ margin-right: 30px;
 
         color: var(--secondary-text-color);
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-wrap: nowrap;
 
     }
@@ -160,5 +158,5 @@ margin-right: 30px;
         margin: 15px;
 
         width: 270px;
-        height: 251px;}
+    }
 }

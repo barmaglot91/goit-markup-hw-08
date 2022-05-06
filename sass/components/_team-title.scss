@@ -9,3 +9,10 @@
 
     margin-bottom: 30px;
 }
+
+@media screen and (min-width: 780px) {
+    .team-title {
+        margin-bottom: 0;
+    }
+}
+

@@ -239,12 +239,12 @@ color: #FFFFFF;
 
     .email-form {
         display: grid;
-        margin-left: 166px;
+
     }
 
     .logo-adress-div {
         flex-direction:column;
-        margin-left: 76px;
+
     
     }
     
@@ -281,6 +281,7 @@ color: #FFFFFF;
     .foot-container {
         display: flex;
         align-items: baseline;
+        justify-content: space-around;
     
     }
     
@@ -296,7 +297,6 @@ color: #FFFFFF;
     .come-links {
         display: flex;
         flex-direction:column;
-        margin-left: 165px;
     
     }
     
@@ -544,8 +544,11 @@ color: #FFFFFF;
 }
 
 
-.adresses {
-    display: table-caption;
+.adress-name:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
 }
 
 .social-list-link-footer {
@@ -688,9 +691,34 @@ color: #FFFFFF;
     
     }
 }
+
+
+@media screen and (min-width: 480px) {
+    .adress-name {
+        text-align: center;
+    }
+    .adress-name:not(:last-child) {
+        margin-bottom: 8px;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .adress-name {
+        text-align: center;
+    }
+    .adress-name:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .adress-name {
+        text-align: start;
+    }
+    .adress-name:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
 
 
 // .footer {
