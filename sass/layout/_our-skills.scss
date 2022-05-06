@@ -35,14 +35,6 @@
 
 
 
-.title-text {
-
-
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
 
 
 .fon-text {
@@ -116,6 +108,7 @@ margin-right: 30px;
 // 768px+
 @media screen and (min-width: 480px) {
 
+
 }
 
 // 768px+
@@ -123,6 +116,7 @@ margin-right: 30px;
     .title {
         text-align: start;
     }
+    
 
     .text {
         text-align: start;
@@ -159,6 +153,12 @@ margin-right: 30px;
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
-        width: 1170px;
+
     }
+
+    .title-text {
+        margin: 15px;
+
+        width: 270px;
+        height: 251px;}
 }
