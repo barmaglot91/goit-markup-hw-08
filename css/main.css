@@ -1619,6 +1619,9 @@ img {
   .adress-name:not(:last-child) {
     margin-bottom: 9px;
   }
+  .logo-footer {
+    text-align: start;
+  }
 }
 
 .quality-list {
