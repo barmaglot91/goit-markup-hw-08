@@ -608,7 +608,7 @@ img {
     margin-bottom: 34px;
   }
   .btn:nth-child(-n+3) {
-    padding-bottom: 21px;
+    margin-bottom: 21px;
   }
 }
 
@@ -897,7 +897,7 @@ img {
     fill: var(--accent-color);
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -931,7 +931,7 @@ img {
   .mobile-menu__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
     position: relative;
     padding-top: 48px;
