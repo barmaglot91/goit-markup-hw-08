@@ -607,7 +607,7 @@ img {
     flex-wrap: wrap;
     margin-bottom: 34px;
   }
-  .btn {
+  .btn:nth-child(-n+3) {
     padding-bottom: 21px;
   }
 }
@@ -929,6 +929,9 @@ img {
     fill: var(--accent-color);
   }
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
     position: relative;
     padding-top: 48px;
@@ -955,7 +958,6 @@ img {
     letter-spacing: 0.02em;
     display: block;
     align-items: center;
-    margin-bottom: 302px;
     color: var(--primary-text-color);
   }
   .mobile-menu__close-icon:hover {
@@ -1724,6 +1726,12 @@ img {
 @media screen and (max-width: 1199px) {
   .our-skills {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title-text:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

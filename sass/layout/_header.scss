@@ -220,6 +220,9 @@ letter-spacing: 0.02em;
     }
 
     .mobile-menu__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         height: 100%;
         position: relative;
         padding-top: 48px;
@@ -250,7 +253,7 @@ letter-spacing: 0.02em;
     letter-spacing: 0.02em;
         display: block;
     align-items: center;
-    margin-bottom: 302px;
+
     color: var(--primary-text-color);
     }
 
@@ -336,9 +339,6 @@ letter-spacing: 0.02em;
     .social-list-mobile {
         margin-bottom: 48px;
     }
-
-
-
 
 }
 
