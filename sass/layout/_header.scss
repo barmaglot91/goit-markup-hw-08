@@ -157,6 +157,11 @@ letter-spacing: 0.02em;
 
 // 0-767px
 @media screen and (max-width: 767px) {
+    
+
+    .current::after {
+        display: none;
+    }
     .site-nav {
         display: none;
     }
@@ -215,6 +220,7 @@ letter-spacing: 0.02em;
     }
 
     .mobile-menu__container {
+        height: 100%;
         position: relative;
         padding-top: 48px;
         padding-left: 40px;
